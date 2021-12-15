@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using RPG.Combat;
 
 namespace RPG.Movement
 {
@@ -11,6 +12,13 @@ namespace RPG.Movement
 
         private void Update() => UpdateAnimator();
 
+        public void StartMoveAction(Vector3 destination)
+        {
+            GetComponent<Fighter>().Cancel();
+            MoveTo(destination);
+        }
+
+        // to be called in the Update frames
         public void MoveTo(Vector3 destination)
         {
             navMeshAgent.destination = destination;
