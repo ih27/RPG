@@ -1,5 +1,6 @@
 using UnityEngine;
 using RPG.Movement;
+using RPG.Core;
 
 namespace RPG.Combat
 {
@@ -24,7 +25,11 @@ namespace RPG.Combat
 
         private bool GetIsInRange() => Vector3.Distance(target.position, transform.position) < weaponRange;
 
-        public void Attack(CombatTarget combatTarget) => target = combatTarget.transform;
+        public void Attack(CombatTarget combatTarget)
+        {
+            GetComponent<ActionScheduler>().StartAction(this);
+            target = combatTarget.transform;
+        }
 
         public void Cancel() => target = null;
     }
