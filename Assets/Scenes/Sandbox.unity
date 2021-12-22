@@ -2012,6 +2012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6635564063141927084, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1.21
+      objectReference: {fileID: 0}
     - target: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
       propertyPath: m_RootOrder
       value: 2
