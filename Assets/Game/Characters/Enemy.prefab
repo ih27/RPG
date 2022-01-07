@@ -74,15 +74,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.0204525
       objectReference: {fileID: 0}
     - target: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -8.171729
       objectReference: {fileID: 0}
     - target: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
       propertyPath: m_LocalRotation.w
@@ -116,6 +116,10 @@ PrefabInstance:
       propertyPath: health
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8535800271874880535, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
+      propertyPath: healthPoints
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
 --- !u!1 &238490202960542209 stripped
@@ -128,18 +132,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7977843766044805189, guid: 7e478ee30f77c428ea64ca8c3b2e6893, type: 3}
   m_PrefabInstance: {fileID: 5971728883124692395}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8865217680069002910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238490202960542209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7f926b7e4824405ad29d6ada6378f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &7379018224888037277
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -153,4 +145,16 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8865217680069002910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238490202960542209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7f926b7e4824405ad29d6ada6378f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
